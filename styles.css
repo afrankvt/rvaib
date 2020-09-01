@@ -19,7 +19,7 @@ header p {
   font-weight: 300;
   font-size: 22px;
   line-height: 1.3em;
-  max-width: 800px;
+  max-width: 760px;
 }
 
 main section {
@@ -28,11 +28,17 @@ main section {
   border-top: 1px solid #e2e8f0;
 }
 
-main section h2 {
+main section li.local:after {
+  content: '*';
+  margin-left: 3px;
   color: #ed64a6;
 }
 
-main section h2 + div {
+main div.notes {
+  color: #ed64a6;
+}
+
+main section {
   display: flex;
   flex-wrap: wrap;
 }
@@ -55,6 +61,7 @@ footer {
   header h1 {
     background-size: 100% auto;
   }
-  main section h2 { float: none; }
-  main section h2 + div { padding: 0; }
+  main section div {
+    margin-right: 1em;
+  }
 }
