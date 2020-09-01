@@ -22,10 +22,23 @@ header p {
   max-width: 800px;
 }
 
-main {
+main section {
   margin: 2em 0;
   padding-top: 1em;
   border-top: 1px solid #e2e8f0;
+}
+
+main section h2 {
+  color: #ed64a6;
+}
+
+main section h2 + div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section div {
+  margin-right: 4em;
 }
 
 main ul + h2 {
@@ -42,4 +55,6 @@ footer {
   header h1 {
     background-size: 100% auto;
   }
+  main section h2 { float: none; }
+  main section h2 + div { padding: 0; }
 }
